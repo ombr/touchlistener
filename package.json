@@ -1,0 +1,25 @@
+{
+  "name": "touchlistener",
+  "version": "0.0.1",
+  "main": "dist/touchlistener.cjs.js",
+  "module": "dist/touchlistener.esm.js",
+  "dependencies": {
+    "referentiel": "0.0.8"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.3.1",
+    "rollup": "^0.60.0",
+    "rollup-plugin-coffee-script": "^2.0.0",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
